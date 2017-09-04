@@ -1,0 +1,80 @@
+﻿@model Insala.WebUI.ViewModel.LoginViewModel
+
+@{
+    ViewBag.Title = "Insala Login";
+}
+@TempData["Message"]
+<div class="row  center_div">
+    <div class="col-xs-12">
+        <p>Welcome Back! Please Sign In</p>
+    </div>
+</div>
+@using (Html.BeginForm("Login", "Authentication", FormMethod.Post, new { @class = "form floating-label", accept_charset = "utf-8" }))
+{
+    <div class="row  center_div">
+        <div class="col-xs-12">
+            <form name="frmContato" id="formContato">
+                <div class="row">
+                    <div class="">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                @Html.TextBoxFor(model => model.Email, "username", new { @type = "text", @class = "form-control", @id = "email", name = "email", AllowHtmlAttribute = true })
+                                @Html.ValidationMessageFor(m => m.Email)
+                            </div>
+                            <div class="form-group">
+                                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4   text-left">
+                    @Html.TextBox("Login", "Login", new { @class = "btn btn-block btn-raised btn-default-login", type = "submit" })
+                    @if (TempData["Message"] != null)
+                    {
+                        <div class="alert alert-danger">
+                            @TempData["Message"];
+                        </div>
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+@*<script type="text/javascript">
+        window.login = {
+            requirefields: ["#txtPassword", "#txtEmail"],
+            authenticate: function () {
+                $.ajax({
+                    url: "/Authentication/Login?" + new Date().getTime().toString(),
+                    cache: false,
+                    dataType: 'json',
+                    type: 'POST',
+                    data: {
+                        Email: $("#txtEmail").val(),
+                        Password: $("#txtPassword").val()
+                    },
+                    beforeSend: function () {
+
+                    },
+                    success: function (result) {
+                        $("#ErrorField").show();
+                    }
+                }
+            );
+            },
+            events: function () {
+                $("#btnLogin").click(function () {
+                    window.login.authenticate();
+                });
+            },
+            init: function () {
+                login.events();
+            }
+        };
+
+        $(document).ready(function () {
+            window.login.init();
+        });
+    </script>*@

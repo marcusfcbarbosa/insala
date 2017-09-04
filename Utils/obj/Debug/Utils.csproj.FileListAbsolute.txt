@@ -1,0 +1,5 @@
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Utils\bin\Debug\Utils.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Utils\bin\Debug\Utils.pdb
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Utils\obj\Debug\Utils.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Utils\obj\Debug\Utils.pdb

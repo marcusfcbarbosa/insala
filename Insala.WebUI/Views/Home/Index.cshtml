@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="row">
+    <div class="col-lg-12 col-xs-12 col-sm-12">
+        <button type="button" class="btn btn-info btn-lg glyphicon glyphicon-plus pull-right" data-toggle="modal" data-target="#myModal"></button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-xs-12 col-sm-12">
+        <table class="table table-condensed" id="tbUsers">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Created</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add new User</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Name" id="txtName" required/>
+                <br/><br />
+                <input type="text" placeholder="Email" id="txtEmail" required />
+                <br /><br />
+                <input type="password" placeholder="Password" id="txtPassword" required />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btnAdUser" >Add User</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="btnCloseModal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    window.home = {
+        url: 'http://localhost:4401/api/v1/',
+        authenticate: function () {
+        },
+        loadAllUsers: function () {
+            $.ajax({
+                url: home.url + 'users',
+                cache: false,
+                dataType: 'json',
+                type: 'GET',
+                beforeSend: function () {
+                    $("#tbUsers > tbody").html("");
+                },
+                success: function (data) {
+                    $(data).each(function (index, value) {
+                        $('#tbUsers').append("<tr><td>" + data[index].email + "</td><td>" + data[index].createdAt + "</td><td>" + data[index].email + "</td><td><span class='btn btn-danger' element=" + data[index].id + " onclick='window.home.deleteUser(this)'><i class='glyphicon glyphicon-trash'></i></span> </td></tr>");
+                    });
+                }
+            });
+        },
+        addNewUser: function () {
+            $.ajax({
+                url: home.url + 'user',
+                cache: false,
+                dataType: 'json',
+                type: 'POST',
+                data: {
+                    picture: '',
+                    type: 1,
+                    email: $("#txtEmail").val(),
+                    Password: $("#txtPassword").val(),
+                    isActive:true
+                },
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("#btnCloseModal").trigger("click");
+                    home.loadAllUsers();
+                }
+            });
+
+        },
+        deleteUser: function (obj) {
+            var ret = confirm('Are you sure you want to Delete ?');
+            if (ret) {
+                $.ajax({
+                    url: home.url + 'user/' + $(obj).attr('element'),
+                    cache: false,
+                    dataType: 'json',
+                    type: 'DELETE',
+                    beforeSend: function () {
+
+                    },
+                    success: function (data) {
+                        home.loadAllUsers();
+                    }
+                });
+            }
+        }
+    };
+
+    $(document).ready(function () {
+        $("#logout").show();
+        window.home.loadAllUsers();
+        
+        $("#btnAdUser").click(function () {
+            window.home.addNewUser();
+            
+        });
+    });
+
+
+</script>

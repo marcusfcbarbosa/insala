@@ -1,0 +1,8 @@
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\bin\Debug\Insala.Domain.dll.config
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\bin\Debug\Insala.Domain.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\bin\Debug\Insala.Domain.pdb
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\bin\Debug\Utils.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\bin\Debug\Utils.pdb
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\obj\Debug\Insala.Domain.csprojResolveAssemblyReference.cache
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\obj\Debug\Insala.Domain.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Domain\obj\Debug\Insala.Domain.pdb

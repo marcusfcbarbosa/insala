@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insala.Domain", "Insala.Domain\Insala.Domain.csproj", "{4B106423-EC59-4858-80CE-4E3A8825D5D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{0AF559EE-D108-4435-AC84-F7CF11EADDA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insala.Infra", "Insala.Infra\Insala.Infra.csproj", "{35E9A554-7BB6-48AC-B6D0-3332908AE909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insala.Test", "Insala.Test\Insala.Test.csproj", "{6CFE4ECE-94F0-4612-982A-2A39F94E7705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insala.Api", "Insala.Api\Insala.Api.csproj", "{6BBB5EA5-D1DF-4BDB-8EB0-99C6302E521C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insala.WebUI", "Insala.WebUI\Insala.WebUI.csproj", "{97EBAA9C-F271-4E41-89EC-AA7E7AB8E400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B106423-EC59-4858-80CE-4E3A8825D5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B106423-EC59-4858-80CE-4E3A8825D5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B106423-EC59-4858-80CE-4E3A8825D5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B106423-EC59-4858-80CE-4E3A8825D5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF559EE-D108-4435-AC84-F7CF11EADDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF559EE-D108-4435-AC84-F7CF11EADDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF559EE-D108-4435-AC84-F7CF11EADDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF559EE-D108-4435-AC84-F7CF11EADDA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E9A554-7BB6-48AC-B6D0-3332908AE909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E9A554-7BB6-48AC-B6D0-3332908AE909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E9A554-7BB6-48AC-B6D0-3332908AE909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E9A554-7BB6-48AC-B6D0-3332908AE909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFE4ECE-94F0-4612-982A-2A39F94E7705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFE4ECE-94F0-4612-982A-2A39F94E7705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFE4ECE-94F0-4612-982A-2A39F94E7705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFE4ECE-94F0-4612-982A-2A39F94E7705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBB5EA5-D1DF-4BDB-8EB0-99C6302E521C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBB5EA5-D1DF-4BDB-8EB0-99C6302E521C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBB5EA5-D1DF-4BDB-8EB0-99C6302E521C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBB5EA5-D1DF-4BDB-8EB0-99C6302E521C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97EBAA9C-F271-4E41-89EC-AA7E7AB8E400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97EBAA9C-F271-4E41-89EC-AA7E7AB8E400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97EBAA9C-F271-4E41-89EC-AA7E7AB8E400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97EBAA9C-F271-4E41-89EC-AA7E7AB8E400}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

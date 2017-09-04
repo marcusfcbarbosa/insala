@@ -1,0 +1,15 @@
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Insala.Infra.dll.config
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Insala.Infra.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Insala.Infra.pdb
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\EntityFramework.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Insala.Domain.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Utils.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Insala.Domain.pdb
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Insala.Domain.dll.config
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\Utils.pdb
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\EntityFramework.xml
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\obj\Debug\Insala.Infra.csprojResolveAssemblyReference.cache
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\obj\Debug\Insala.Infra.dll
+C:\Users\marcu\OneDrive\Documentos\UtuIT\Insala.Infra\obj\Debug\Insala.Infra.pdb
