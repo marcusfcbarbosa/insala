@@ -1,0 +1,33 @@
+Hello =)
+
+
+First things Firts!
+
+
+At first i want to say sorry, for the project delay, i had some personal issues that i have to deal whit this wekend hehe.
+
+
+I Built  a DDD ,TDD, web Api , REST Application.
+
+
+
+
+1 - Instead of working whit WebForms, i use a asp.net MVC4 Web Application for the client, because webform application does not provide full support for IOC (Inversion Of Control)
+
+2-  Before you start the project, YOU HAVE TO RUN ALL TESTS, this will create your DataBase, and get the initial Load of users
+
+3 - Im working whit Code First, using Migrations
+
+====================================================================================================================================================================================
+I had a default instance name (SQLExpress), if you don´t have this instance in your System, you need to switch the name of the instance, on every project .config
+<add name="StandardConnectionString" connectionString="Data Source=.\SQLExpress; Initial Catalog=Insala; Integrated Security = true;" providerName="System.Data.SqlClient" />
+====================================================================================================================================================================================
+
+For IOC i´ve used Ninject......i could use AutoFac ....but im just getting to know this tool, só i feel like using hehahaha
+
+
+http://www.ninject.org/
+
+
+
+If you had any kind of trouble, please send me a whatsap, and i answer you back =)
