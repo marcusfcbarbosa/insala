@@ -28,6 +28,10 @@ For IOC i´ve used Ninject......i could use AutoFac ....but im just getting to kn
 
 http://www.ninject.org/
 
-
+=============================================
+=============================================
+4- You Need to run at the same time Insala.Api and Insala.WebUi togther..ok =)!!
+=============================================
+=============================================
 
 If you had any kind of trouble, please send me a whatsap, and i answer you back =)
